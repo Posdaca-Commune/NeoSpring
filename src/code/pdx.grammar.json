@@ -1,0 +1,19 @@
+{
+  "name": "pdx",
+  "scopeName": "source.pdx",
+  "fileTypes": ["txt", "mod"],
+  "patterns": [
+    { "name": "comment.line.number-sign.pdx", "match": "#.*$" },
+    {
+      "name": "string.quoted.double.pdx",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [{ "name": "constant.character.escape.pdx", "match": "\\\\." }]
+    },
+    { "name": "keyword.operator.logical.pdx", "match": "\\b(AND|OR|NOT|NOR|NAND)\\b" },
+    { "name": "constant.language.boolean.pdx", "match": "\\b(yes|no)\\b" },
+    { "name": "constant.numeric.pdx", "match": "-?\\b\\d+(\\.\\d+)?\\b" },
+    { "name": "keyword.operator.assignment.pdx", "match": "=" },
+    { "name": "entity.name.tag.pdx", "match": "\\b[A-Za-z_][A-Za-z0-9_.:]*\\b" }
+  ]
+}

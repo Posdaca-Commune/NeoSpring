@@ -1,0 +1,53 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+
+const html = fs.readFileSync(
+    path.join(process.cwd(), "src/components/hoi4-folder-tree.html"),
+    "utf-8",
+);
+---
+
+<div class="folder-wrap" set:html={html} />
+
+<style>
+    .folder-wrap {
+        border: 1px solid var(--sl-color-gray-5);
+        background: var(--sl-color-gray-6);
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        overflow: auto;
+        max-height: min(70vh, 48rem);
+    }
+    .folder-wrap :global(.tree details) {
+        padding-left: 1rem;
+    }
+    .folder-wrap :global(.tree summary) {
+        list-style: none;
+        cursor: pointer;
+    }
+    .folder-wrap :global(.tree summary::-webkit-details-marker) {
+        display: none;
+    }
+    .folder-wrap :global(.tree-item) {
+        display: flex;
+        align-items: center;
+        min-height: 2rem;
+        color: var(--sl-color-white);
+        border-radius: 0.375rem;
+        padding: 0.2rem 0.4rem;
+    }
+    .folder-wrap :global(.tree-item:hover) {
+        background: var(--sl-color-gray-5);
+    }
+    .folder-wrap :global(.tree-item::before) {
+        content: "";
+        width: 0.55rem;
+        height: 0.55rem;
+        flex-shrink: 0;
+        margin-right: 0.5rem;
+        border-radius: 0.1rem;
+        background: var(--sl-color-accent);
+        opacity: 0.7;
+    }
+</style>
