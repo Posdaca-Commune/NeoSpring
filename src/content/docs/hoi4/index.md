@@ -1,9 +1,9 @@
 ---
-title: 钢铁雄心 IV
+title: Hearts of Iron IV
 description: Hearts of Iron IV 模组文档
 ---
 
-这一册按游戏本体目录组织，而不是按教程章节。你在 `common/on_actions` 里看到的东西，文档里也在同一条路径下。
+这一册按游戏本体目录组织，而不是按教程章节。你在 `folder/common` 里看到的东西，文档里也在同一条路径下。
 
 ## 从这里开始
 

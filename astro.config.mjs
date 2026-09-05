@@ -8,7 +8,7 @@ export default defineConfig({
     integrations: [
         starlight({
             title: "NeoSpring",
-            description: "P 社模组制作文档",
+            description: "P社模组制作文档",
             defaultLocale: "root",
             locales: {
                 root: {

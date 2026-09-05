@@ -1,5 +1,5 @@
 ---
-title: 本地化（localisation）
+title: localisation
 ---
 
 游戏内支持的本地化语言共有以下几种：
