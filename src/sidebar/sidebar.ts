@@ -5,7 +5,7 @@ export const sidebar = [
     {
         id: "core",
         label: "核心",
-        icon: "setting",
+        icon: "star",
         link: "/core/",
         items: coreSidebar,
     },
