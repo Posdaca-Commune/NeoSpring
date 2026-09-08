@@ -2,17 +2,18 @@
 title: 入门
 description: 创建 HOI4 模组、打开工程、覆盖规则与 debug
 ---
-## 一些杂谈
+:::tip
 - 开发时建议对各部分做有效分类，大部分情况下游戏会尝试读取每一个文件夹中的文件，不必担心文件夹过多导致读不到。
 - 对于原版的修改、替换和Mod新增的内容，建议分开存放，新增内容建议加前缀以区别原版（如`<MODID>_`）。
-- 用 Git 托管到 GitHub 一类平台以便于管理和备份。
+- 用托管代码到GitHub一类平台以便于管理和备份。
 - 编写代码时随手写注释有助于帮助自己后期看懂自己的屎山。
+:::
 ## 制作Mod前的准备工作
 ### 下载编辑器
 文档采用[Intellij IDEA](https://www.jetbrains.com/zh-cn/idea "点击前往官网")（以下简称IDEA）作为教程，当然代码部分同样适用于[VS code](https://code.visualstudio.com "点击前往官网")（以下简称VSC）。
 ### 安装插件
 #### 必备插件：
-- [Paradox Chronicle](https://plugins.jetbrains.com/plugin/16825-paradox-chronicle "点击前往插件页面")（P社语言解析工具，旧称Paradox Language Support）
+- [Paradox Chronicle](https://plugins.jetbrains.com/plugin/16825 "点击前往插件页面")（P社语言解析工具，旧称Paradox Language Support）
 ## 创建Mod
 ### 官方启动器：
 1. 打开启动器，单击左侧**Mod 库**。
